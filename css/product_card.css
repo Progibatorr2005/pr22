@@ -1,0 +1,175 @@
+main{
+    justify-content: center;
+    display: flex;
+    font-family: Gilroy;
+}
+
+
+
+.product_card{
+    width: 1410px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0 50px;
+}
+
+.l{
+    max-width: 850px;
+}
+
+.product_card__info{
+    position: sticky;
+    align-self: flex-start;
+    top: 15px;
+}
+
+
+.product_card__info_container{
+    display: flex;
+
+
+}
+
+.product_card__info_left{
+    font-size: 16px;
+}
+
+
+.favourites{
+    display: flex;
+    gap: 30px;
+}
+
+.favourites button{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.product_card__info_price{
+    font-size: 30px;
+}
+
+
+.product_card__info_size{
+    width: 430px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.product_card__info_size2{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.product_card__info_size2 button{
+    font-size: 17px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    padding: 0 10px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.product_card__info_size button{
+    font-size: 17px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    width: 65px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.product_card__info_size button:focus{
+    border-color: #F53B49;
+    background-color: #F53B49;
+    color: #FFFFFF;
+}
+
+.product_card__info_size2 button:focus{
+    border-color: #F53B49;
+    background-color: #F53B49;
+    color: #FFFFFF;
+}
+
+.text_button{
+    font-size: 14px;
+    font-family: Unbounded;
+    color: #FFFFFF;
+    margin-top: 40px;
+    align-items: center;
+}
+
+
+
+.f{
+    margin-top: 120px;
+}
+
+
+.f p{
+    font-size: 17px;
+}
+
+.product_card__card{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.product_card__card--card{
+    max-width: 220px;
+    min-width: 220px;
+    height: 300px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.product_card__card--card img{
+    max-width: 250px;
+    height: 300px;
+}
+
+
+.card{
+    border-radius: 4px;
+}
+
+.card  p{
+    margin: 0;
+}
+
+.card h3{
+    margin: 5px 0;
+}
+
+.card:hover{
+    background-color: #c8c8c8;
+}
+
+
+
+.product_card--container{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    width: 500px;
+}
+
+.product_card--container img{
+    width: 380px;
+    border-radius: 4px;
+}
+

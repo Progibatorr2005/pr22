@@ -1,0 +1,177 @@
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.payment-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1410px;
+  margin: 0 50px;
+  margin-bottom: 100px;
+}
+
+.payment-info {
+  max-width: 700px;
+  margin-top: 40px;
+}
+
+.card_card{
+  width: 170px;
+  height: 95px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.card_card img{
+  width: 140px;
+
+}
+
+.card-image {
+  width: 163px;
+  height: 95px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#card-details input, .address input {
+  width: 560px;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  font-family: Gilroy;
+}
+
+.payment-actions {
+  text-align: center;
+}
+
+.error {
+  border-color: red;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+} 
+#card-details h1{
+    font-size: 20px;
+    
+}
+.rect-pay{
+    padding: 30px;
+    margin: 40px 0px ;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    position: sticky;
+    align-self: flex-start;
+ 
+} 
+button:active, button:focus {
+
+ border: none; outline: none;
+}
+
+#pay-button{
+    border: none; outline: none;
+    width: 340px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Unbounded;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ///// */
+.form_radio_group {
+	display: flex;
+    flex-direction: column;
+	overflow: hidden;
+        
+        border-radius: 1px #1c1c1c;
+}
+
+.form_radio_group-item{
+  font-family: Gilroy;
+}
+
+.form_radio_group-item img{
+  width: 40px;
+  margin: 10px 10px;
+}
+
+.form_radio_group input[type=radio] {
+	display: none;
+    
+}
+.form_radio_group label {
+	display: flex;
+  cursor: pointer;
+  line-height: 34px;
+  user-select: none;
+  width: 560px;
+  gap: 5px;
+}
+ 
+.form_radio_group .form_radio_group-item:first-child label {
+    
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+.form_radio_group .form_radio_group-item:last-child label {
+	display: flex;
+    align-items: center;
+
+    
+}
+ 
+.form_radio_group input[type=radio]:checked + label {
+	background: #e9e9e9;
+}
+
+
+.form_radio_group label:hover {
+	color: #666;
+    
+    background-color: #dadada;
+}
+.info-order-pay p{
+  display: flex;
+  margin: 30px 0px 0px 50px;
+  line-height: 0;
+  font-size: 20px;
+
+}
+
+.info-pay{
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  
+  line-height: 0;
+  margin: 0px 60px 0px 60px;
+}
+
+.info-pay p{
+  font-size: 20px;
+  font-family: Gilroy;
+}
+
+
+.total-info{
+  display: flex;
+  border-top:1px black;
+  gap: 70px;
+  margin: 20px 0px 0px 50px;
+  font-family: Gilroy;
+  font-size: 25px;
+
+}

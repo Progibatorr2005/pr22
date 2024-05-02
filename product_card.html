@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/product_card.css">
+    <link rel="stylesheet" type="text/css" href="./css/fancybox.css" media="screen" />
+    <script type="text/javascript" src="./js/js_jquery.js"></script> 
+    <script type="text/javascript" src="./js/core_ajaxconst.php"></script>
+    <script type="text/javascript" src="./js/jquery.selectbox.js"></script>
+    <script type="text/javascript" src="./js/js_scripts.js"></script>
+    <script type="text/javascript">
+    function setBigImage(foto) {
+      $("#adpdp14").attr('href', $(foto).parent('.it').children('a').attr('href'));
+      document.getElementById("dp14").src = foto.src;
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_container__top">
+                <img onclick="document.location='./index.html'" src="/img/logo.svg">
+                <div class="header_nav">
+                    <button><p>Услуги</p></button>
+                    <button><p>Поддержка</p></button>
+                    <button><p>Блог</p></button>
+                    <button><p>Где купить</p></button>
+                    <button><p>Контакты</p></button>
+                </div>
+                <button>
+                    <p>Войти</p>
+                </button>
+            </div>
+            <div class="header_container__bottom">
+                <button class="red_button">
+                    <img src="/img/catalog.png">
+                    <p>Каталог</p>
+                </button>
+                <form class="form">
+                    <input class="search" type="text" placeholder="Искать здесь...">
+                    <button class="button">
+                        <img src="/img/search.png" alt="">
+                    </button>
+                  </form>
+                <div class="header_container__bottom__rightblock">
+                    <button><img src="/img/srav.png"></button>
+                    <button><img src="/img/heaart.png"></button>
+                    <button><img src="/img/baasket.png"></button>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </header>
+    <main>
+        <div class="product_card">
+            <div class="l">
+                <div class="product_card--container">
+                    <div class="product_card__swiper">
+                        <div class="img">
+                            <a href="./img/119568560299.jpg"  rel="example_group" id="adpdp14">
+                            <img src="./img/119568560299.jpg" id="dp14" style="margin-bottom: 3px;" alt="" /></a>
+                          </div>
+                          <div class="thumbs">
+                            <div class="it"><a style="display:none;" href="./img/119568560299.jpg" rel="example_group"></a>
+                                <img src="./img/119568560299.jpg" onclick='setBigImage(this);' alt="" /></div>
+                            <div class="it"><a style="display:none;" href="img/3.jpg" rel="example_group"></a>
+                                <img src="./img/2.jpg" onclick='setBigImage(this);' alt="" /></div>
+                            <div class="it"><a style="display:none;" href="img/4.jpg" rel="example_group"></a>
+                                <img src="img/4.jpg" onclick='setBigImage(this);' alt="" /></div>
+                            <div class="it"><a style="display:none;" href="img/5.jpg" rel="example_group"></a>
+                                <img src="img/5.jpg" onclick='setBigImage(this);' alt="" /></div>
+                            <div class="it"><a style="display:none;" href="img/6.jpg" rel="example_group"></a>
+                                <img src="img/6.jpg" onclick='setBigImage(this);' alt="" /></div>
+                            <div class="it"><a style="display:none;" href="img/7.jpg" rel="example_group"></a>
+                                <img src="img/7.jpg" onclick='setBigImage(this);' alt="" /></div>
+                            <div class="clr"></div>
+                          </div>
+                    </div>
+                    <div class="photo_block">
+                        <img src="./img/photo1.png">
+                        <img src="./img/photo2.png">
+                    </div>
+                </div>
+
+                <div class="f">
+                    <h2>Описание</h2>
+                    <p>Кроссовки New Balance 9060 — переосмысление классической серии 99X, где основными знаками отличия становятся изысканный стиль и инновационный дизайн.<br/>
+
+                        СЦЕПЛЕНИЕ С ПОВЕРХНОСТЬЮ<br/>
+                        Подошва с рельефным рисунком обеспечивает превосходное сцепление и устойчивость, позволяя чувствовать себя уверенно при каждом шаге.<br/>
+                        АМОРТИЗАЦИЯ<br/>
+                        Промежуточная подошва с технологией амортизации ABZORB защищает суставы от ударных нагрузок.<br/>
+                        НАТУРАЛЬНЫЕ МАТЕРИАЛЫ<br/>
+                        Верх частично выполнен из натуральной кожи, что делает модель не только практичной, но и стильной.<br/>
+                        ДОПОЛНИТЕЛЬНАЯ ВЕНТИЛЯЦИЯ<br/>
+                        Сетчатые вставки отлично пропускают воздух, обеспечивая дополнительную вентиляцию.<br/>
+                        СТАБИЛИЗАЦИЯ И ПОДДЕРЖКА СТОПЫ<br/>
+                        Амортизация пятки ABZORB SBS обеспечивает дополнительную устойчивость, оптимальную посадку и надежную фиксацию.<br/>
+                        КОМФОРТ<br/>
+                        Текстильная подкладка отлично облегает стопу, гарантируя комфорт на протяжении всего дня.</p>
+                    <h2>С этим товаром покупают</h2>
+                    <div class="product_card__card">
+                        <div class="card">
+                            <div class="product_card__card--card">
+                                <img src="./img/chel.jpg" alt="">
+                            </div>
+                            <p>Футболка мужская FILA</p>
+                            <h3>1 990 ₽</h3>
+                        </div>
+
+                        <div class="product_card__card--card">
+                            <div class="card">
+                                <div class="product_card__card--card">
+                                    <img src="./img/tolstovka.jpg" alt="">
+                                </div>
+                                <p>Толстовка мужская PUMA</p>
+                                <h3>7 999 ₽</h3>
+                            </div>
+                        </div>
+                        <div class="product_card__card--card">
+                            <div class="card">
+                                <div class="product_card__card--card">
+                                    <img src="./img/69206750299.jpg" alt="">
+                                </div>
+                                <p>Брюки флисовые женские PUMA</p>
+                                <h3>2 899 ₽</h3>
+                            </div>
+                        </div>
+                        <div class="product_card__card--card">
+                            <div class="card">
+                                <div class="product_card__card--card">
+                                    <img src="./img/chel.jpg" alt="">
+                                </div>
+                                <p>Футболка мужская FILA</p>
+                                <h3>1990 ₽</h3>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="product_card__info">
+                <div class="product_card__info_logo">
+                    <p>NEW BALANCE</p>
+                    <h2>Кроссовки New Balance 9060</h2>
+                    <div class="product_card__info_price"><p>20 000 ₽</p></div>
+                    <p>Цвет:зеленый/бежевый</p>
+                    <p>Выберите размер</p>
+                    <div class="product_card__info_size">
+                        <button><p>36</p></button>
+                        <button><p>37</p></button>
+                        <button><p>38</p></button>
+                        <button><p>39</p></button>
+                        <button><p>40</p></button>
+                        <button><p>41</p></button>
+                        <button><p>42</p></button>
+                    </div>
+                    <p>Выберите цвет</p>
+                    <div class="product_card__info_size2 ">
+                        <button><p>Зеленые</p></button>
+                        <button><p>Бежевые</p></button>
+                        <button><p>Серые</p></button>
+
+                    </div>
+                    <button onclick="document.location='./cart.html'" class="red_button text_button">
+                        <img src="./img/Group 738.png" alt="">
+                        <p>В корзину</p>
+                    </button>
+                </div>
+                <div class="product_card__info_container">
+                    <div class="product_card__info_left">
+                        <div class="favourites">
+                            <button>
+                                <img src="./img/Vector.png" alt="">
+                                <p>В избраное</p>
+                            </button>
+                            <button>
+                                <img src="./img/Frame 67.png" alt="">
+                                <p>В сравнение</p>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_contaner">
+            <img src="/img/logo.svg" alt="">
+            <div class="footer_contaner__info_block">
+                <button><h3>Каталог</h3></button>
+                <button><p>Для дома</p></button>
+                <button><p>Для фитнес клубов</p></button>
+                <button><p>Акции</p></button>
+                <button><p>идеи и подборки</p></button>
+                <button><p>Новинки</p></button>
+            </div>
+            <div class="footer_contaner__info_block">
+                <button><h3>Поддержка</h3></button>
+                <button><p>Доставка и оплата</p></button>
+                <button><p>Условия возвтрата</p></button>
+                <button><p>Сервисная заявка</p></button>
+                <button><p>FAQ</p></button>
+                <button><p>Гарантия</p></button>
+            </div>
+            <div class="footer_contaner__info_block">
+                <button><h3>Услуги</h3></button>
+                <button><p>Лизинг</p></button>
+                <button><p>Trade-IN</p></button>
+                <button><p>Рассрочка</p></button>
+            </div>
+            <div class="footer_contaner__info_block">
+                <button><h3>О компании</h3></button>
+                <button><p>О нас</p></button>
+                <button><p>Где купить</p></button>
+                <button><p>Контакты</p></button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

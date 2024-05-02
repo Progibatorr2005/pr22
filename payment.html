@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/spayment.css" />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <header>
+    <div class="header_container">
+        <div class="header_container__top">
+            <img onclick="document.location='./index.html'" src="/img/logo.svg">
+            <div class="header_nav">
+                <button><p>Услуги</p></button>
+                <button><p>Поддержка</p></button>
+                <button><p>Блог</p></button>
+                <button><p>Где купить</p></button>
+                <button><p>Контакты</p></button>
+            </div>
+            <button>
+                <p>Войти</p>
+            </button>
+        </div>
+        <div class="header_container__bottom">
+            <button class="red_button">
+                <img src="/img/catalog.png">
+                <p>Каталог</p>
+            </button>
+            <form class="form">
+                <input class="search" type="text" placeholder="Искать здесь...">
+                <button class="button">
+                    <img src="/img/search.png" alt="">
+                </button>
+              </form>
+            <div class="header_container__bottom__rightblock">
+                <button><img src="/img/srav.png"></button>
+                <button><img src="/img/heaart.png"></button>
+                <button><img src="/img/baasket.png"></button>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+</header>
+  <main>
+    <div class="payment-container">
+      <div class="payment-info ">
+        <div class="cards">
+          <div class="card_card card-image">
+            <img style="width: 120px;" src="./img/sbp.png" alt="">
+          </div>
+          <div class="card_card card-image">
+            <img src="./img/money.png" alt="">
+          </div>
+          <div class="card_card card-image">
+            <img style="width: 90px;" src="./img/sber.png" alt="">
+          </div>
+          <div class="card_card card-image">
+            <img src="./img/tin.png" alt="">
+          </div>
+        </div>
+        <div id="card-details" style="display: none;">
+          <h2>Укажите данные карты</h2>
+          <input type="text" id="card-number" placeholder="Номер карты">
+          <input type="text" id="card-expiry" placeholder="MM/YY">
+          <input type="text" id="card-cvv" placeholder="CVV">
+        </div>
+        <div class="address">
+          <h2>Укажите адрес доставки</h2>
+          <input type="text" id="address" placeholder="Регион, город, улица, квартира ( Укажите адрес полностью)">
+        </div>
+  <div class="delivery-method">
+      <h2>Укажите способ доставки</h2>
+  <div class="form_radio_group">
+  
+      <div class="form_radio_group">
+    <div class="form_radio_group-item">
+      <input id="radio-1" type="radio" name="radio" value="1" checked>
+      <label for="radio-1"><img src="./img/layer1.png" alt=""><p>Доставка</p></label>
+    </div>
+    <div class="form_radio_group-item">
+      <input id="delivery" type="radio" name="radio" value="2">
+      <label for="delivery"><img src="./img/Vector2.png"><p>Самовывоз</p></label>
+    </div>
+  
+  </div>
+      
+  </div>
+        </div>
+      </div>
+      <div class="payment-actions">
+        <div class="rect-pay">
+          
+        <div class="info-order-pay">
+          <h2>Ваш заказ</h2></div>
+        <div class="info-pay">
+          <p>Товары:</p>
+          <p>20 000 ₽</p></div>
+
+          <div class="total-info">
+              <p>ИТОГО:</p>
+              <p>20 000 ₽</p>
+          </div>
+          <button class="red_button" id="pay-button">Оплатить</button>
+    </div>
+    </div>
+    </div>
+  </main>
+   
+  <footer>
+    <div class="footer_contaner">
+        <img src="/img/logo.svg" alt="">
+        <div class="footer_contaner__info_block">
+            <button><h3>Каталог</h3></button>
+            <button><p>Для дома</p></button>
+            <button><p>Для фитнес клубов</p></button>
+            <button><p>Акции</p></button>
+            <button><p>идеи и подборки</p></button>
+            <button><p>Новинки</p></button>
+        </div>
+        <div class="footer_contaner__info_block">
+            <button><h3>Поддержка</h3></button>
+            <button><p>Доставка и оплата</p></button>
+            <button><p>Условия возвтрата</p></button>
+            <button><p>Сервисная заявка</p></button>
+            <button><p>FAQ</p></button>
+            <button><p>Гарантия</p></button>
+        </div>
+        <div class="footer_contaner__info_block">
+            <button><h3>Услуги</h3></button>
+            <button><p>Лизинг</p></button>
+            <button><p>Trade-IN</p></button>
+            <button><p>Рассрочка</p></button>
+        </div>
+        <div class="footer_contaner__info_block">
+            <button><h3>О компании</h3></button>
+            <button><p>О нас</p></button>
+            <button><p>Где купить</p></button>
+            <button><p>Контакты</p></button>
+        </div>
+    </div>
+</footer>
+    <script src="./js/payment.js"></script>
+</body>
+</html>

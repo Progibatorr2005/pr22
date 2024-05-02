@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fancybox.css">
+
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_container__top">
+                <img src="/img/logo.svg">
+                <div class="header_nav">
+                    <button><p>Услуги</p></button>
+                    <button><p>Поддержка</p></button>
+                    <button><p>Блог</p></button>
+                    <button><p>Где купить</p></button>
+                    <button><p>Контакты</p></button>
+                </div>
+                
+                <button id="register-btn">Регистрация</button>
+
+                <div id="register-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Регистрация</h2>
+                    <button style="border-color: black;" class="google-btn red_line_button">
+                        <img src="./img/google.svg">
+                        <p>Войти через Google</p>
+                    </button>
+                    <div class="or-divider">или</div>
+                    <input type="email" id="email-input" placeholder="Введите email">
+                    <input type="password" id="password-input" placeholder="Введите пароль">
+                    <button class="confirm-btn red_button">Подтвердить</button>
+                    <p>Уже есть аккаунт? <a href="#" id="login-link">Войти</a></p>
+                  </div>
+                </div>
+                
+                <div id="login-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Вход</h2>
+                    <input type="email" id="login-email" placeholder="Введите email">
+                    <input type="password" id="login-password" placeholder="Введите пароль">
+                    <button class="confirm-btn red_button">Войти</button>
+                  </div>
+                </div>
+            </div>
+            <div class="header_container__bottom">
+                <button class="red_button" id="catalog-button">
+                    <img src="/img/catalog.png">
+                    <p>Каталог</p>
+                </button>
+                <form class="form">
+                    <input class="search" type="text" placeholder="Искать здесь...">
+                    <button class="button">
+                        <img src="/img/search.png" alt="">
+                    </button>
+                  </form>
+                <div class="header_container__bottom__rightblock">
+                    <button><img src="/img/srav.png"></button>
+                    <button><img src="/img/heaart.png"></button>
+                    <button><img src="/img/baasket.png"></button>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+        <div id="catalog-overlay" class="hidden">
+            <div id="catalog-content">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'Одежда')">Одежда</button>
+                        <button class="tablinks" onclick="openCity(event, 'Обувь')">Обувь</button>
+                        <button class="tablinks" onclick="openCity(event, 'Аксессуары')">Аксессуары</button>
+                        <button class="tablinks" onclick="openCity(event, 'Рыбалка и охота')">Рыбалка и охота</button>
+                        <button class="tablinks" onclick="openCity(event, 'Велоспорт')">Велоспорт</button>
+                        <button class="tablinks" onclick="openCity(event, 'Бег')">Бег</button>
+                        <button class="tablinks" onclick="openCity(event, 'Туризм и активный отдых')">Туризм и активный отдых</button>
+                        <button class="tablinks" onclick="openCity(event, 'Зимний спорт')">Зимний спорт</button>
+                      </div>
+                      
+                      <div id="Одежда" class="tabcontent">
+                        <div class="tabcontent__card">
+                            <img src="./img/11.png">
+                            <p>Куртки и ветровки</p>
+                        </div>
+                        <div class="tabcontent__card">
+                            <img src="./img/22.png">
+                            <p>Жилетки</p>
+                        </div>
+                        <div class="tabcontent__card">
+                            <img src="./img/33.png">
+                            <p>Толствоки и худи</p>
+                        </div>
+                        <div class="tabcontent__card">
+                            <img src="./img/44.png">
+                            <p>Футболки и лонглсивы</p>
+                        </div>
+                        <div class="tabcontent__card">
+                            <img src="./img/55.png">
+                            <p>Брюки</p>
+                        </div>
+                        <div class="tabcontent__card">
+                            <img src="./img/66.png">
+                            <p>Шорты</p>
+                        </div>
+                      </div>
+                      <div id="Обувь" class="tabcontent">
+                        <a href="./catalog.html">
+                            <div class="tabcontent__card">
+                                <img src="./img/rectanglecross.png">
+                                <p>Кроссовки</p>
+                            </div>
+                        </a>
+                    
+                        <div class="tabcontent__card">
+                            <img src="./img/ced.png">
+                            <p>Кеды</p>
+                        </div>
+                        <div class="tabcontent__card">
+                            <img src="./img/buts.png">
+                            <p>Бутсы</p>
+                        </div>
+                        <div class="tabcontent__card">
+                            <img src="./img/polubot.png">
+                            <p>Полуботинки</p>
+                        </div>
+                        <div class="tabcontent__card">
+                            <img src="./img/shlep.png">
+                            <p>Шлепанцы и сабо</p>
+                        </div>
+                        <div class="tabcontent__card">
+                            <img src="./img/borc.png">
+                            <p>Борцовки</p>
+                        </div>
+                    </div>
+                
+                <div id="Аксессуары" class="tabcontent">
+                </div>
+                <div id="Рыбалка и охота" class="tabcontent">
+                </div>
+                <div id="Велоспорт" class="tabcontent">
+                </div>
+                <div id="Бег" class="tabcontent">
+                </div>
+                <div id="Туризм и активный отдых" class="tabcontent">
+                </div>
+                <div id="Зимний спорт" class="tabcontent">
+                </div>
+                
+                </div>
+              <button style="display: none;" id="close-catalog">Закрыть</button>
+            </div>
+          </div>
+
+    </header>
+    <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img style="max-width: 1410px;" src="/img/main_baner.png">
+              </div>
+              <div class="swiper-slide">Слайд 2</div>
+              <div class="swiper-slide">Слайд 3</div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./img/arrow.png" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./img/arrow2.png" alt="">
+            </div>
+          </div>
+          <script src="/js/script.js"></script>
+          <div class="main_block">
+            <h2 style="width: 1410px; margin:30px auto 20px;">Популярные категории</h2>
+            <div class="main_block__line">
+                
+                <div class="big_category_card category_card">
+                    <p>Сноуборды</p>
+                    <img style="width: 350px;" src="/img/snow.png">
+                </div>
+                <div class="category_card">
+                    <p>Рюкзаки</p>
+                    <img style="width: 140px; height: 210px;" src="/img/backpack2.png">
+                </div>
+                <div class="category_card">
+                    <p>Мячи</p>
+                    <img style="width: 190px; margin-top: 30px;" src="/img/bool.png">
+                </div>
+                <div class="category_card">
+                    <p>Ракетки</p>
+                    <img style="margin-top: 40px;" src="/img/raket.png">
+                </div>
+                <div class="category_card">
+                    <p>Ветровки</p>
+                    <img src="/img/vetr.png">
+                </div>
+                <div class="category_card">
+                    <p>Кроссовки</p>
+                    <img style="margin-top: 60px; height: 150px;" src="./img/adasdasdasdasdasd.png">
+                </div>
+                <div class="category_card">
+                    <p>Ролики</p>
+                    <img src="/img/roliki.png">
+                </div>
+                </div>
+                <div class="x">
+                    <div class="promotion">
+                        <h2>Акции</h2>
+                        <div class="promotion__line">
+                            <div class="promotion__line--card">
+                                <div class="promotion__line_img">
+                                    <img src="/img/backpack.png" alt="">
+                                </div>
+                                <div class="promotion__line_text">
+                                    <div class="promotion__line_availability">
+                                        <p>В налиции</p>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                    <p class="h">Рюкзак Athlex</p>
+                                    <div class="promotion__line_rating">
+                                        <p>Рейтинг</p>
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                    </div>
+                                    <div class="promotion__line_buy_displey promotion__line_buy ">
+                                        <div class="promotion__line_buy-left">
+                                            <p>2 900 ₽</p>
+                                            <p><s>3 900 ₽</s></p>
+                                        </div>
+                                        <div class="promotion__line_buy-right">
+                                            <button class="red_button" style="font-size: 17px;">
+                                                <img src="/img/Group 738.svg" alt="">
+                                                 <p>Купить</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="promotion__line--card">
+                                <div class="promotion__line_img">
+                                    <img src="/img/backpack.png" alt="">
+                                </div>
+                                <div class="promotion__line_text">
+                                    <div class="promotion__line_availability">
+                                        <p>В налиции</p>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                    <p class="h">Рюкзак Athlex</p>
+                                    <div class="promotion__line_rating">
+                                        <p>Рейтинг</p>
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                    </div>
+                                    <div class="promotion__line_buy promotion__line_buy_displey">
+                                        <div class="promotion__line_buy-left">
+                                            <p>2 900 ₽</p>
+                                            <p><s>3 900 ₽</s></p>
+                                        </div>
+                                        <div class="promotion__line_buy-right">
+                                            <button class="red_button" style="font-size: 17px;">
+                                                <img src="/img/Group 738.svg" alt="">
+                                                 <p>Купить</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="promotion__line--card">
+                                <div class="promotion__line_img">
+                                    <img src="/img/backpack.png" alt="">
+                                </div>
+                                <div class="promotion__line_text">
+                                    <div class="promotion__line_availability">
+                                        <p>В налиции</p>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                    <p class="h">Рюкзак Athlex</p>
+                                    <div class="promotion__line_rating">
+                                        <p>Рейтинг</p>
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                    </div>
+                                    <div class="promotion__line_buy promotion__line_buy_displey">
+                                        <div class="promotion__line_buy-left">
+                                            <p>2 900 ₽</p>
+                                            <p><s>3 900 ₽</s></p>
+                                        </div>
+                                        <div class="promotion__line_buy-right">
+                                            <button class="red_button" style="font-size: 17px;">
+                                                <img src="/img/Group 738.svg" alt="">
+                                                 <p>Купить</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="promotion__line--card">
+                                <div class="promotion__line_img">
+                                    <img src="/img/backpack.png" alt="">
+                                </div>
+                                <div class="promotion__line_text">
+                                    <div class="promotion__line_availability">
+                                        <p>В налиции</p>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                    <p class="h">Рюкзак Athlex</p>
+                                    <div class="promotion__line_rating">
+                                        <p>Рейтинг</p>
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                    </div>
+                                    <div class="promotion__line_buy promotion__line_buy_displey">
+                                        <div class="promotion__line_buy-left">
+                                            <p>2 900 ₽</p>
+                                            <p><s>3 900 ₽</s></p>
+                                        </div>
+                                        <div class="promotion__line_buy-right">
+                                            <button class="red_button" style="font-size: 17px;">
+                                                <img src="/img/Group 738.svg" alt="">
+                                                 <p>Купить</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="promotion__line--card">
+                                <div class="promotion__line_img">
+                                    <img src="/img/backpack.png" alt="">
+                                </div>
+                                <div class="promotion__line_text">
+                                    <div class="promotion__line_availability">
+                                        <p>В налиции</p>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                    <p class="h">Рюкзак Athlex</p>
+                                    <div class="promotion__line_rating">
+                                        <p>Рейтинг</p>
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                    </div>
+                                    <div class="promotion__line_buy promotion__line_buy_displey">
+                                        <div class="promotion__line_buy-left">
+                                            <p>2 900 ₽</p>
+                                            <p><s>3 900 ₽</s></p>
+                                        </div>
+                                        <div class="promotion__line_buy-right">
+                                            <button class="red_button" style="font-size: 17px;">
+                                                <img src="/img/Group 738.svg" alt="">
+                                                 <p>Купить</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="promotion__line--card">
+                                <div class="promotion__line_img">
+                                    <img src="/img/backpack.png" alt="">
+                                </div>
+                                <div class="promotion__line_text">
+                                    <div class="promotion__line_availability">
+                                        <p>В налиции</p>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                    <p class="h">Рюкзак Athlex</p>
+                                    <div class="promotion__line_rating">
+                                        <p>Рейтинг</p>
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                        <img src="/img/star.png" alt="">
+                                    </div>
+                                    <div class="promotion__line_buy promotion__line_buy_displey">
+                                        <div class="promotion__line_buy-left">
+                                            <p>2 900 ₽</p>
+                                            <p><s>3 900 ₽</s></p>
+                                        </div>
+                                        <div class="promotion__line_buy-right">
+                                            <button class="red_button" style="font-size: 17px;">
+                                                <img src="/img/Group 738.svg" alt="">
+                                                 <p>Купить</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+           </div>
+    </main>
+    <footer>
+        <div class="footer_contaner">
+            <img src="/img/logo.svg" alt="">
+            <div class="footer_contaner__info_block">
+                <button><h3>Каталог</h3></button>
+                <button><p>Для дома</p></button>
+                <button><p>Для фитнес клубов</p></button>
+                <button><p>Акции</p></button>
+                <button><p>идеи и подборки</p></button>
+                <button><p>Новинки</p></button>
+            </div>
+            <div class="footer_contaner__info_block">
+                <button><h3>Поддержка</h3></button>
+                <button><p>Доставка и оплата</p></button>
+                <button><p>Условия возвтрата</p></button>
+                <button><p>Сервисная заявка</p></button>
+                <button><p>FAQ</p></button>
+                <button><p>Гарантия</p></button>
+            </div>
+            <div class="footer_contaner__info_block">
+                <button><h3>Услуги</h3></button>
+                <button><p>Лизинг</p></button>
+                <button><p>Trade-IN</p></button>
+                <button><p>Рассрочка</p></button>
+            </div>
+            <div class="footer_contaner__info_block">
+                <button><h3>О компании</h3></button>
+                <button><p>О нас</p></button>
+                <button><p>Где купить</p></button>
+                <button><p>Контакты</p></button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
