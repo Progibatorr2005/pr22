@@ -173,3 +173,43 @@ main{
     border-radius: 4px;
 }
 
+@media (max-width: 320px){
+    .product_card--container{
+        flex-wrap: wrap;
+    }
+
+    .product_card__swiper{
+    }
+
+    .l{
+        max-width: 300px;
+    }
+
+    .product_card--container{
+        width: 300px;
+    }
+
+    .img img{
+        width: 300px;
+    }
+
+    .product_card--container img{
+        width: 300px;
+    }
+    .product_card{
+        width: 300px;
+    }
+
+    .imgimg{
+        width: 300px;
+    }
+
+    .product_card__info{
+        width: 300px;
+    }
+
+    .product_card__info_size{
+        width: 300px;
+    }
+
+}
