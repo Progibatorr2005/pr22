@@ -32,6 +32,16 @@ main{
 .tabs__right{
     display: flex;
     gap: 12px;
+    margin-top: 10px;
+    font-family: Gilroy;
+}
+
+.tabs__right button{
+  color: #575757;
+}
+
+.tabs__right button:focus{
+  color: black;
 }
 
 .tabs_button{
