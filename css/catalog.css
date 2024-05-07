@@ -272,4 +272,17 @@ main{
   .main_catalog_container{
     max-width: 300px;
   }
+
+  .tabs{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.tabs__left{
+    width: 300px;
+}
+
+.promotion__line--card{
+    width: 300px !important;
+}
 }

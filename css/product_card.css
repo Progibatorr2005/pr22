@@ -173,6 +173,10 @@ main{
     border-radius: 4px;
 }
 
+.content2{
+    display: none;
+}
+
 @media (max-width: 320px){
     .product_card--container{
         flex-wrap: wrap;
@@ -212,4 +216,24 @@ main{
         width: 300px;
     }
 
+    .product_card__swiper{
+        max-width: 300px;
+    }
+
+    .imgimg{
+        max-width: 300px !important;
+    }
+
+    .product_card__card--card{
+        margin: 0 auto;
+    }
+
+    .content2 {
+        display: block;
+        position: relative;
+    }
+
+    .content1{
+        display: none;
+    }
 }

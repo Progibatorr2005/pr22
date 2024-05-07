@@ -173,5 +173,62 @@ button:active, button:focus {
   margin: 20px 0px 0px 50px;
   font-family: Gilroy;
   font-size: 25px;
+}
 
+@media (max-width: 320px){
+  main{
+    width: 300px;
+  }
+
+  .payment-container{
+    width: 300px;
+  }
+
+  #card-details input, .address input{
+    width: 300px;
+  }
+
+  .cards{
+    width: 300px;
+  }
+
+  h2{
+    font-size: 17px !important;
+  }
+
+  .delivery-method{
+    max-width: 300px;
+  }
+  
+  .card-image{
+    width: 145px;
+    margin: 0;
+  }
+
+  .cards{
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .payment-container{
+    margin: 0 10px;
+  }
+
+  #pay-button{
+    width: 100%;
+    margin: 0;
+  }
+
+  .total-info{
+    gap: 10px;
+    font-size: 20px;
+  }
+  
+  .info-pay{
+    gap: 10px;
+  }
+
+  footer{
+    margin-top: 50px !important;
+  }
 }
